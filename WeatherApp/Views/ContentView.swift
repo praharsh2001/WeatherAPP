@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    init() {
+        FirebaseApp.configure()
+    }
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
@@ -35,10 +39,7 @@ struct ContentView: View {
             }
         }
         .background(.orange)
-        .preferredColorScheme(.light)
-        /*
-        Change the color scheme to light theme
-        */
+        .preferredColorScheme(.dark)
         
     }
 }
