@@ -35,7 +35,10 @@ struct ContentView: View {
             }
         }
         .background(.orange)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(.light)
+        /*
+        Change the color scheme to light theme
+        */
         
     }
 }
